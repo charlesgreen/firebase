@@ -1,5 +1,5 @@
-# use latest Node LTS (Fermium)
-FROM node:fermium-alpine
+ARG PROJECT_ID
+FROM gcr.io/$PROJECT_ID/node:latest
 
 RUN npm install -g firebase-tools
 
